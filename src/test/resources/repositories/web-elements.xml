@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://qualit.ibs-qa.ru/schema/web-elements">
+    <Page name="Песочница">
+        <Page name="Меню">
+            <Link name="Песочница"/>
+            <Link name="Товары"/>
+            <Link name="Сброс данных"/>
+        </Page>
+        <Page name="Список товаров">
+            <Block name="Меню"/>
+            <StaticText name="Заголовок" locator='//h5[text()="Список товаров"]' isLoaded="true"/>
+            <Collection name="Таблица" locator=".//table/tbody/tr">
+                <StaticText name="#" locator=".//th" isLoaded="true"/>
+                <StaticText name="Наименование" locator=".//td[1]"/>
+                <StaticText name="Тип" locator=".//td[2]"/>
+                <StaticText name="Экзотический" locator=".//td[3]"/>
+            </Collection>
+            <Button name="Добавить"/>
+        </Page>
+        <Page name="Добавление товара">
+            <StaticText name="Заголовок" locator='//h5[text()="Добавление товара"]' isLoaded="true"/>
+            <TextInput name="Наименование"/>
+            <ComboBox name="Тип"/>
+            <CheckBox name="Экзотический"/>
+            <Button name="Сохранить"/>
+        </Page>
+    </Page>
+</Pages>
