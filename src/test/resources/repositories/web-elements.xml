@@ -6,6 +6,10 @@
             <Link name="Товары"/>
             <Link name="Сброс данных"/>
         </Page>
+        <Page name="Главная страница">
+            <Link name="QualIT" isLoaded="true"/>
+            <Block name="Меню"/>
+        </Page>
         <Page name="Список товаров">
             <Block name="Меню"/>
             <StaticText name="Заголовок" locator='//h5[text()="Список товаров"]' isLoaded="true"/>
