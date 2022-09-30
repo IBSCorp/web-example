@@ -4,6 +4,7 @@
         <Page name="Меню">
             <Link name="Песочница"/>
             <Link name="Товары"/>
+            <Link name="Тест Iframe"/>
             <Link name="Сброс данных"/>
         </Page>
         <Page name="Главная страница">
@@ -27,6 +28,11 @@
             <ComboBox name="Тип"/>
             <CheckBox name="Экзотический"/>
             <Button name="Сохранить"/>
+        </Page>
+        <Page name="Тест Iframe" frames="external">
+            <StaticText name="Заголовок 1" frames=".." locator='.//h5[text()="Тест Iframe"]'/>
+            <StaticText name="Заголовок 2" locator='.//div[text()="Внешний фрейм"]'/>
+            <StaticText name="Заголовок 3" frames="internal" locator='.//div[text()="Вложенный фрейм"]'/>
         </Page>
     </Page>
 </Pages>
