@@ -4,3 +4,4 @@
 target/
 .idea/
 .allure/
+driver-instance/

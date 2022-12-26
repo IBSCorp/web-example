@@ -15,7 +15,7 @@
             <Block name="Меню"/>
             <StaticText name="Заголовок" locator='//h5[text()="Список товаров"]' isLoaded="true"/>
             <Collection name="Таблица" locator=".//table/tbody/tr">
-                <StaticText name="#" locator=".//th" isLoaded="true"/>
+                <StaticText name="#" locator=".//th"/>
                 <StaticText name="Наименование" locator=".//td[1]"/>
                 <StaticText name="Тип" locator=".//td[2]"/>
                 <StaticText name="Экзотический" locator=".//td[3]"/>
