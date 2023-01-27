@@ -13,6 +13,6 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 @SelectDirectories("src/test/resources/features")
 @CucumberContextConfiguration
 @ContextConfiguration("classpath:spring.xml")
-@TestExecutionListeners(inheritListeners=false, listeners={DependencyInjectionTestExecutionListener.class})
+@TestExecutionListeners(inheritListeners = false, listeners = {DependencyInjectionTestExecutionListener.class})
 public class TestRunner {
 }
