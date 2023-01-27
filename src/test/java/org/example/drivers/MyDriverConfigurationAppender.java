@@ -1,7 +1,7 @@
 package org.example.drivers;
 
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.springframework.stereotype.Component;
 import ru.ibsqa.qualit.selenium.driver.WebSupportedDriver;
 import ru.ibsqa.qualit.selenium.driver.configuration.IDriverConfiguration;
@@ -25,13 +25,14 @@ public class MyDriverConfigurationAppender implements IDriverConfigurationAppend
         if (!incognito) {
             return;
         }
-        if (driverConfiguration.getDriverType() == WebSupportedDriver.CHROME) {
+        if (WebSupportedDriver.CHROME.equals(driverConfiguration.getDriverType())) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("incognito");
-            driverConfiguration.getDesiredCapabilities().setCapability(ChromeOptions.CAPABILITY, options);
-        } else if (driverConfiguration.getDriverType() == WebSupportedDriver.FIREFOX) {
-            FirefoxProfile firefoxProfile = new FirefoxProfile();
-            firefoxProfile.setPreference("browser.privatebrowsing.autostart", true);
+            driverConfiguration.setOptions(options);
+        } else if (WebSupportedDriver.FIREFOX.equals(driverConfiguration.getDriverType())) {
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("-private");
+            driverConfiguration.setOptions(options);
         }
     }
 

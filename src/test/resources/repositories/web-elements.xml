@@ -5,6 +5,8 @@
             <Link name="Песочница"/>
             <Link name="Товары"/>
             <Link name="Тест Iframe"/>
+            <Link name="Отладка элементов"/>
+            <Link name="Отладка коллекций"/>
             <Link name="Сброс данных"/>
         </Page>
         <Page name="Главная страница">
@@ -15,7 +17,7 @@
             <Block name="Меню"/>
             <StaticText name="Заголовок" locator='//h5[text()="Список товаров"]' isLoaded="true"/>
             <Collection name="Таблица" locator=".//table/tbody/tr">
-                <StaticText name="#" locator=".//th" isLoaded="true"/>
+                <StaticText name="#" locator=".//th"/>
                 <StaticText name="Наименование" locator=".//td[1]"/>
                 <StaticText name="Тип" locator=".//td[2]"/>
                 <StaticText name="Экзотический" locator=".//td[3]"/>
@@ -33,6 +35,37 @@
             <StaticText name="Заголовок 1" frames=".." locator='.//h5[text()="Тест Iframe"]'/>
             <StaticText name="Заголовок 2" locator='.//div[text()="Внешний фрейм"]'/>
             <StaticText name="Заголовок 3" frames="internal" locator='.//div[text()="Вложенный фрейм"]'/>
+        </Page>
+        <Page name="Отладка элементов">
+            <StaticText name="Заголовок" locator='//h5[text()="Отладка элементов"]' isLoaded="true"/>
+            <Button name="Активная кнопка"/>
+            <Button name="Неактивная кнопка"/>
+            <Button name="Видимая кнопка"/>
+            <Button name="Невидимая кнопка" waitTimeOut="5"/>
+            <Button name="Несуществующая кнопка" waitTimeOut="5"/>
+            <Button name="Нижняя кнопка"/>
+            <Button name="BackToTop" locator="id=btn-back-to-top"/>
+            <Button name="Кнопка с подсказкой"/>
+            <StaticText name="Подсказка" locator="class=tooltip-inner"/>
+            <TextInput name="Активное поле"/>
+            <TextInput name="Неактивное поле"/>
+            <TextInput name="Видимое поле"/>
+            <TextInput name="Невидимое поле" waitTimeOut="5"/>
+            <TextInput name="Несуществующее поле" waitTimeOut="5"/>
+            <TextInput name="Поле со значением"/>
+            <TextInput name="Поле с placeholder"/>
+            <TextInput name="Поле с ошибкой" customType="org.example.elements.ValidationInput"/>
+        </Page>
+        <Page name="Отладка коллекций">
+            <StaticText name="Заголовок" locator='//h5[text()="Отладка коллекций"]' isLoaded="true"/>
+            <TextInput name="Количество записей"/>
+            <CheckBox name="Отсортировать по тексту"/>
+            <Button name="Обновить"/>
+            <Collection name="Таблица" locator=".//table/tbody/tr" waitTimeOut="5">
+                <StaticText name="Номер" locator=".//th"/>
+                <StaticText name="Текст" locator=".//td[1]"/>
+                <StaticText name="Цвет" locator=".//td[2]/i"/>
+            </Collection>
         </Page>
     </Page>
 </Pages>
