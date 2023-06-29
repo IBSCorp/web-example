@@ -2,8 +2,8 @@ package org.example.drivers;
 
 import org.openqa.selenium.WebDriver;
 import org.springframework.stereotype.Component;
-import ru.ibsqa.qualit.selenium.driver.AbstractDriverFactory;
-import ru.ibsqa.qualit.selenium.driver.WebSupportedDriver;
+import ru.ibsqa.chameleon.selenium.driver.AbstractDriverFactory;
+import ru.ibsqa.chameleon.selenium.driver.WebSupportedDriver;
 
 /**
  * Бины, наследующие от абстрактного класса AbstractDriverFactory, могут быть использованы для самостоятельного

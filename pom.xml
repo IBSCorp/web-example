@@ -11,33 +11,33 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>ru.ibsqa.qualit</groupId>
-        <artifactId>qualit-bom</artifactId>
-        <version>3.4.1</version>
+        <groupId>ru.ibsqa.chameleon</groupId>
+        <artifactId>chameleon-bom</artifactId>
+        <version>3.5.0</version>
     </parent>
 
     <repositories>
       <repository>
-        <id>qualit</id>
-        <name>QualIT Framework</name>
-        <url>https://nexus.appline.ru/repository/qualit</url>
+        <id>chameleon</id>
+        <name>Chameleon Framework</name>
+        <url>https://nexus.appline.ru/repository/chameleon</url>
       </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>ru.ibsqa.qualit</groupId>
-            <artifactId>qualit-web-cucumber</artifactId>
+            <groupId>ru.ibsqa.chameleon</groupId>
+            <artifactId>chameleon-web-cucumber</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>ru.ibsqa.qualit</groupId>
-            <artifactId>qualit-log</artifactId>
+            <groupId>ru.ibsqa.chameleon</groupId>
+            <artifactId>chameleon-log</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>ru.ibsqa.qualit</groupId>
-            <artifactId>qualit-allure-cucumber</artifactId>
+            <groupId>ru.ibsqa.chameleon</groupId>
+            <artifactId>chameleon-allure-cucumber</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

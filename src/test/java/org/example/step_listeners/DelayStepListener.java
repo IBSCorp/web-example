@@ -2,8 +2,8 @@ package org.example.step_listeners;
 
 import org.aspectj.lang.JoinPoint;
 import org.springframework.stereotype.Component;
-import ru.ibsqa.qualit.steps.aspect.AbstractStepListener;
-import ru.ibsqa.qualit.steps.aspect.StepType;
+import ru.ibsqa.chameleon.steps.aspect.AbstractStepListener;
+import ru.ibsqa.chameleon.steps.aspect.StepType;
 
 /**
  * Бины, имплементирующие интерфейс IStepListener или расширяющие абстрактный класс AbstractStepListener, могут быть

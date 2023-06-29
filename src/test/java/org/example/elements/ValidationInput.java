@@ -2,7 +2,7 @@ package org.example.elements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import ru.ibsqa.qualit.elements.web.TextInput;
+import ru.ibsqa.chameleon.elements.web.TextInput;
 
 import java.util.List;
 

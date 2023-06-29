@@ -10,6 +10,6 @@
         http://www.springframework.org/schema/context/spring-context.xsd"
        default-lazy-init="true">
 
-    <context:component-scan base-package="ru.ibsqa.qualit,org.example"/>
+    <context:component-scan base-package="ru.ibsqa.chameleon,org.example"/>
 
 </beans>

@@ -2,7 +2,7 @@ package org.example.steps;
 
 import io.cucumber.java.ru.Когда;
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.ibsqa.qualit.steps.AbstractSteps;
+import ru.ibsqa.chameleon.steps.AbstractSteps;
 
 /**
  * Пример реализации кастомных шагов уровня BDD.

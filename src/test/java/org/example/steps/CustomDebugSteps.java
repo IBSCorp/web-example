@@ -1,9 +1,9 @@
 package org.example.steps;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.ibsqa.qualit.steps.AbstractSteps;
+import ru.ibsqa.chameleon.steps.AbstractSteps;
 import org.springframework.stereotype.Component;
-import ru.ibsqa.qualit.steps.TestStep;
+import ru.ibsqa.chameleon.steps.TestStep;
 
 /**
  * Пример реализации кастомных тестовых шагов. Такие шаги не могут напрямую фигурировать в сценарии BDD, но могут

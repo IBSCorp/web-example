@@ -3,9 +3,9 @@ package org.example.drivers;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.springframework.stereotype.Component;
-import ru.ibsqa.qualit.selenium.driver.WebSupportedDriver;
-import ru.ibsqa.qualit.selenium.driver.configuration.IDriverConfiguration;
-import ru.ibsqa.qualit.selenium.driver.configuration.IDriverConfigurationAppender;
+import ru.ibsqa.chameleon.selenium.driver.WebSupportedDriver;
+import ru.ibsqa.chameleon.selenium.driver.configuration.IDriverConfiguration;
+import ru.ibsqa.chameleon.selenium.driver.configuration.IDriverConfigurationAppender;
 
 /**
  * Бины, имплементирующие интерфейс IDriverConfigurationAppender, могут быть использованы для точной настройки
